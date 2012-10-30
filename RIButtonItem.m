@@ -9,6 +9,7 @@
 #import "RIButtonItem.h"
 
 @implementation RIButtonItem
+@synthesize userInfo;
 @synthesize label;
 @synthesize action;
 
@@ -21,6 +22,13 @@
 {
     id newItem = [self item];
     [newItem setLabel:inLabel];
+    return newItem;
+}
+
++(id)itemWithLabel:(NSString *)inLabel andUserInfo:(NSDictionary *)inUserInfo
+{
+    id newItem = [self itemWithLabel:inLabel];
+    [newItem setUserInfo:inUserInfo];
     return newItem;
 }
 
