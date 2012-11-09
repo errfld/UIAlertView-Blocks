@@ -15,7 +15,7 @@
 }
 @property (retain, nonatomic) NSString *label;
 @property (retain, nonatomic) NSDictionary *userInfo;
-@property (copy, nonatomic) void (^action)(NSDictionary*);
+@property (copy, nonatomic) void (^action)(NSDictionary *userInfo);
 +(id)item;
 +(id)itemWithLabel:(NSString *)inLabel;
 +(id)itemWithLabel:(NSString *)inLabel andUserInfo:(NSDictionary*)inUserInfo;
