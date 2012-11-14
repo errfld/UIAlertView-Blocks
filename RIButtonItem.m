@@ -32,5 +32,9 @@
     return newItem;
 }
 
+-(void)setAction:(RIActionBlock)action{
+    
+}
+
 @end
 
